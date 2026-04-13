@@ -26,7 +26,6 @@ yarn-error.log*
 pnpm-debug.log*
 
 # pnpm
-pnpm-lock.yaml
 .pnpm-store/
 
 # local env files
