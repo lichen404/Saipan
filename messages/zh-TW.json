@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "title": "塞班島婚禮 | 海外婚禮旅行專家",
+    "description": "探索塞班島夢幻婚禮場地和蜜月旅行套餐。專業婚禮攝影，浪漫海灘儀式，定制旅行體驗。"
+  },
+  "nav": {
+    "home": "首頁",
+    "weddings": "婚禮服務",
+    "travel": "旅行套餐",
+    "gallery": "照片畫廊",
+    "contact": "聯絡我們"
+  },
+  "home": {
+    "hero": {
+      "title": "塞班島夢幻婚禮",
+      "subtitle": "在天堂般的海島上舉辦您的完美婚禮",
+      "cta": "探索婚禮套餐"
+    },
+    "highlights": {
+      "title": "為什麼選擇塞班島",
+      "venues": {
+        "title": "絕美場地",
+        "description": "白沙海灘、浪漫教堂、私密花園等多種選擇"
+      },
+      "photography": {
+        "title": "專業攝影",
+        "description": "經驗豐富的婚禮攝影師捕捉您的珍貴瞬間"
+      },
+      "packages": {
+        "title": "全包套餐",
+        "description": "婚禮加蜜月旅行的完整體驗方案"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 塞班島婚禮旅行。保留所有權利。",
+    "slogan": "讓夢想成真"
+  }
+}

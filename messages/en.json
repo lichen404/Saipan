@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "title": "Saipan Weddings | Destination Wedding Experts",
+    "description": "Discover stunning Saipan wedding venues and honeymoon packages. Professional wedding photography, romantic beach ceremonies, and custom travel experiences."
+  },
+  "nav": {
+    "home": "Home",
+    "weddings": "Weddings",
+    "travel": "Travel",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Dream Weddings in Saipan",
+      "subtitle": "Say 'I do' in paradise with breathtaking ocean views",
+      "cta": "Explore Wedding Packages"
+    },
+    "highlights": {
+      "title": "Why Choose Saipan",
+      "venues": {
+        "title": "Stunning Venues",
+        "description": "White sand beaches, romantic chapels, private gardens and more"
+      },
+      "photography": {
+        "title": "Professional Photography",
+        "description": "Experienced wedding photographers capturing your precious moments"
+      },
+      "packages": {
+        "title": "All-Inclusive Packages",
+        "description": "Complete wedding and honeymoon experience solutions"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Saipan Wedding Travel. All rights reserved.",
+    "slogan": "Make Your Dreams Come True"
+  }
+}
