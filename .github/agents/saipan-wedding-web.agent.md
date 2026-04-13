@@ -1,7 +1,7 @@
 ---
 description: "Use when: building Next.js static website, creating Saipan wedding travel website, setting up wedding destination site, developing multilingual wedding promotion site, creating travel and wedding pages. Specialist in Next.js TypeScript static sites for destination wedding and travel promotion."
 name: "Saipan Wedding Web Developer"
-tools: [read, edit, search, execute, web]
+tools: [execute/runNotebookCell, execute/testFailure, execute/getTerminalOutput, execute/killTerminal, execute/sendToTerminal, execute/createAndRunTask, execute/runInTerminal, read/getNotebookSummary, read/problems, read/readFile, read/viewImage, read/terminalSelection, read/terminalLastCommand, edit/createDirectory, edit/createFile, edit/createJupyterNotebook, edit/editFiles, edit/editNotebook, edit/rename, search/changes, search/codebase, search/fileSearch, search/listDirectory, search/textSearch, search/usages, web/fetch, web/githubRepo, upstash/context7/get-library-docs, upstash/context7/resolve-library-id]
 argument-hint: "Describe what pages, features, or components you need for the Saipan wedding travel website"
 ---
 
