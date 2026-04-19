@@ -33,17 +33,14 @@ export default function HomePage({ params: { locale } }: HomePageProps): JSX.Ele
   const t = useTranslations();
   const storyItems = [
     {
-      number: '1',
       title: t('home.story.reason1.title'),
       description: t('home.story.reason1.description'),
     },
     {
-      number: '2',
       title: t('home.story.reason2.title'),
       description: t('home.story.reason2.description'),
     },
     {
-      number: '3',
       title: t('home.story.reason3.title'),
       description: t('home.story.reason3.description'),
     },
@@ -89,19 +86,14 @@ export default function HomePage({ params: { locale } }: HomePageProps): JSX.Ele
 
             <div className="space-y-5">
               {storyItems.map((item) => (
-                <article key={item.number} className="bg-white rounded-2xl shadow-sm p-5 md:p-7 border border-sand-100">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 shrink-0 rounded-full bg-ocean-600 text-white flex items-center justify-center font-bold">
-                      {item.number}
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="text-xl md:text-2xl font-semibold text-gray-800">
-                        {item.title}
-                      </h3>
-                      <p className="text-gray-600 leading-8 whitespace-pre-line">
-                        {item.description}
-                      </p>
-                    </div>
+                <article key={item.title} className="bg-white rounded-2xl shadow-sm p-5 md:p-7 border border-sand-100">
+                  <div className="space-y-2">
+                    <h3 className="text-xl md:text-2xl font-semibold text-gray-800">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600 leading-8 whitespace-pre-line">
+                      {item.description}
+                    </p>
                   </div>
                 </article>
               ))}
