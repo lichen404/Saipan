@@ -16,21 +16,55 @@
       "subtitle": "Say 'I do' in paradise with breathtaking ocean views",
       "cta": "Explore Wedding Packages"
     },
-    "highlights": {
+    "story": {
       "title": "Why Choose Saipan",
-      "venues": {
-        "title": "Stunning Venues",
-        "description": "White sand beaches, romantic chapels, private gardens and more"
+      "subtitle": "Make a lifelong vow in the blue heart of Micronesia",
+      "intro": "Many people ask: why choose Saipan for a wedding?\nIs it the sea, deeper than Tiffany blue, or the way this island holds every dream of love and distance?\nIn truth, the reasons are even more moving than the scenery itself.",
+      "reason1": {
+        "title": "A visa-free American dream with effortless ceremony",
+        "description": "Saipan is currently the only U.S. overseas territory that Chinese citizens can visit without a visa. That means you and your guests can skip the lengthy paperwork and simply set off with your passports in hand.\n\nAs for the journey, even the transfer adds to the romance. A stop in Hong Kong offers duty-free shopping and a breathtaking aerial view of the Pacific in shifting shades of blue."
       },
-      "photography": {
-        "title": "Professional Photography",
-        "description": "Experienced wedding photographers capturing your precious moments"
+      "reason2": {
+        "title": "A classic chapel ceremony blessed by the sea",
+        "description": "Saipan has long been one of the world’s best-known wedding destinations, with a rich ceremony culture and beautiful seaside chapels.\n\nHere, a pastor can officiate your vows in a setting where organ music and ocean waves meet, turning “I Do” into more than a promise — a sacred moment blessed by faith and nature."
       },
-      "packages": {
-        "title": "All-Inclusive Packages",
-        "description": "Complete wedding and honeymoon experience solutions"
-      }
+      "reason3": {
+        "title": "Your wedding becomes your honeymoon instantly",
+        "description": "One of the greatest joys of marrying in Saipan is that the honeymoon begins the very moment the ceremony ends.\n\nFrom the electric blue of the Grotto to the powder-soft sands of Managaha Island and sunset drives around the coast, every corner of the island invites you and your guests into a true holiday state of mind."
+      },
+      "closing": "To the one I love:\nWe are not only holding a wedding.\nWe are carving our most precious memories\ninto one of the brightest pearls of the Pacific."
     }
+  },
+  "weddings": {
+    "meta": {
+      "title": "Saipan Wedding Services",
+      "description": "Celebrate your dream wedding on Saipan's beautiful beaches."
+    },
+    "title": "Weddings",
+    "mainImageAlt": "Bride and groom embracing on Saipan beach",
+    "mainImageDesc": "White sands and turquoise waters make your wedding unforgettable."
+  },
+  "travel": {
+    "meta": {
+      "title": "Saipan Travel Packages",
+      "description": "Discover exciting activities and custom travel experiences in Saipan."
+    },
+    "title": "Travel Packages",
+    "mainImageAlt": "Tourist enjoying vacation by the sea in Saipan",
+    "mainImageDesc": "Enjoy water sports and stunning nature for a memorable trip."
+  },
+  "gallery": {
+    "meta": {
+      "title": "Saipan Photo Gallery",
+      "description": "Explore the best moments from Saipan weddings and travels."
+    },
+    "title": "Gallery",
+    "venue1Alt": "Saipan Blue Grotto entrance",
+    "venue1Desc": "The Blue Grotto is Saipan's most famous natural wonder, perfect for diving and photography.",
+    "venue2Alt": "Saipan historic cannon site",
+    "venue2Desc": "A unique blend of history and ocean views on Saipan.",
+    "activity1Alt": "Saipan beach leisure activities",
+    "activity1Desc": "Sunshine, sand, and sea-enjoy your relaxing holiday."
   },
   "footer": {
     "copyright": "© 2026 Saipan Wedding Travel. All rights reserved.",

@@ -1,7 +1,9 @@
 # Saipan Wedding Travel Website
 
 ## Project Overview
-Static Next.js website promoting Saipan destination weddings and travel experiences. Built with TypeScript, Tailwind CSS, and next-intl for Chinese/English/Japanese support. Deployed to GitHub Pages.
+Static Next.js website promoting Saipan destination weddings and travel experiences. Built with TypeScript, Tailwind CSS, and next-intl for Simplified Chinese / Traditional Chinese / English support. Deployed to GitHub Pages.
+
+> **Implementation status**: Infrastructure (i18n, static export, Tailwind) is fully set up. Feature pages (`/weddings`, `/travel`, `/gallery`, `/contact`) and reusable components are still being built.
 
 ## Code Style
 
@@ -19,10 +21,10 @@ Static Next.js website promoting Saipan destination weddings and travel experien
 
 ### Styling
 - **Tailwind CSS only** - no custom CSS files
-- Color palette:
-  - Ocean: `blue-500`, `blue-600`, `cyan-400` (primary branding)
-  - Sand: `amber-100`, `amber-200`, `stone-100` (backgrounds)
-  - Sunset: `orange-400`, `rose-400`, `pink-300` (accents)
+- Color palette uses custom semantic classes defined in `tailwind.config.ts`:
+  - Ocean: `ocean-500`, `ocean-600`, `ocean-400` (primary branding)
+  - Sand: `sand-50`, `sand-100`, `sand-200` (backgrounds)
+  - Sunset: `sunset-300`, `sunset-400`, `sunset-500` (accents)
   - Wedding: `white`, `gray-50` (clean sections)
 - Mobile-first: base styles for mobile, use `md:` and `lg:` for desktop
 - Consistent spacing: use `space-y-8`, `gap-6`, `p-8` patterns
@@ -51,10 +53,12 @@ Static Next.js website promoting Saipan destination weddings and travel experien
 - Add `.nojekyll` to `public/` for GitHub Pages
 
 ### i18n with next-intl
-- Middleware handles locale detection
+- **No middleware** — i18n uses the `app/[locale]/` route segment pattern
+- Root `app/page.tsx` (client component) detects browser language and redirects to `/{locale}`
+- `app/[locale]/layout.tsx` is **async** — imports messages at build time via dynamic `import()`. Do NOT use `headers()` or other runtime APIs; they break static export
 - All routes prefixed with locale: `/zh/weddings`, `/zh-TW/weddings`, `/en/weddings`
+- Locales: `['zh', 'zh-TW', 'en']` (defined in `i18n.ts`); default: `zh`
 - Use `useTranslations()` hook in components
-- Default locale: `zh` (Simplified Chinese)
 
 ### Content Structure
 ```
@@ -108,8 +112,10 @@ npx serve out
 - Color contrast meets WCAG AA standards
 
 ## Key Reference Files
-- `next.config.js` - Static export configuration
-- `i18n.ts` - Locale configuration
-- `middleware.ts` - Locale detection and routing
+- `next.config.js` — Static export; **dynamic `basePath`** auto-set from `GITHUB_REPOSITORY` env var for GitHub Pages sub-path deployment
+- `i18n.ts` — Locale list and message loader
+- `app/[locale]/layout.tsx` — Async layout; sets i18n context with `setRequestLocale()` and `generateStaticParams()`
+- `tailwind.config.ts` — Custom color scales: `ocean`, `sand`, `sunset`
+- `.github/instructions/` — `component.instructions.md` and `page.instructions.md` with detailed patterns
 
 在本项目的开发过程中，请始终通过 Context7 检索相关的最新文档和 API 用法，无需我额外声明。
