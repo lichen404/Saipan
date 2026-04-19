@@ -9,12 +9,15 @@ const isProjectPages =
   Boolean(process.env.GITHUB_ACTIONS) &&
   Boolean(repositoryName) &&
   !repositoryName.endsWith('.github.io');
-const basePath = isProjectPages ? `/${repositoryName}`.toLowerCase() : '';
+const basePath = isProjectPages ? `/${repositoryName}` : '';
 
 const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
+  },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
   },
   basePath,
   assetPrefix: basePath || undefined,

@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import TopNavigation from '@/components/TopNavigation';
+import { getAssetPath } from '@/lib/getAssetPath';
 
 interface HomePageProps {
   params: { locale: string };
@@ -49,21 +50,21 @@ export default function HomePage({ params: { locale } }: HomePageProps): JSX.Ele
   const featuredCards = [
     {
       href: `/${locale}/weddings`,
-      imageSrc: '/images/weddings/ioa8320-bride-and-groom-483223_1920.jpg',
+      imageSrc: getAssetPath('/images/weddings/ioa8320-bride-and-groom-483223_1920.jpg'),
       imageAlt: t('weddings.mainImageAlt'),
       title: t('weddings.title'),
       description: t('weddings.mainImageDesc'),
     },
     {
       href: `/${locale}/travel`,
-      imageSrc: '/images/activities/atman-travel-1106306_1920.jpg',
+      imageSrc: getAssetPath('/images/activities/atman-travel-1106306_1920.jpg'),
       imageAlt: t('travel.mainImageAlt'),
       title: t('travel.title'),
       description: t('travel.mainImageDesc'),
     },
     {
       href: `/${locale}/gallery`,
-      imageSrc: '/images/venues/baegjins-saipan-2379093_1920.jpg',
+      imageSrc: getAssetPath('/images/venues/baegjins-saipan-2379093_1920.jpg'),
       imageAlt: t('gallery.venue1Alt'),
       title: t('gallery.title'),
       description: t('gallery.venue1Desc'),
@@ -130,7 +131,7 @@ export default function HomePage({ params: { locale } }: HomePageProps): JSX.Ele
           <div className="grid grid-cols-2 gap-3 md:gap-4">
             <div className="col-span-2 overflow-hidden rounded-[28px] border border-white/15 shadow-2xl">
               <Image
-                src="/images/pexels/weddings/beach-wedding-sunset.jpg"
+                src={getAssetPath('/images/pexels/weddings/beach-wedding-sunset.jpg')}
                 alt={t('gallery.items.sunsetVows.alt')}
                 width={1200}
                 height={800}
@@ -139,7 +140,7 @@ export default function HomePage({ params: { locale } }: HomePageProps): JSX.Ele
             </div>
             <div className="overflow-hidden rounded-[24px] border border-white/15 shadow-xl">
               <Image
-                src="/images/pexels/weddings/beach-bride.jpg"
+                src={getAssetPath('/images/pexels/weddings/beach-bride.jpg')}
                 alt={t('gallery.items.bridePortrait.alt')}
                 width={800}
                 height={533}
@@ -148,7 +149,7 @@ export default function HomePage({ params: { locale } }: HomePageProps): JSX.Ele
             </div>
             <div className="overflow-hidden rounded-[24px] border border-white/15 shadow-xl">
               <Image
-                src="/images/pexels/scenery/tropical-sailboat-couple.jpg"
+                src={getAssetPath('/images/pexels/scenery/tropical-sailboat-couple.jpg')}
                 alt={t('gallery.items.sailboatRomance.alt')}
                 width={800}
                 height={533}

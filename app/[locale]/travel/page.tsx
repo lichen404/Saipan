@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import TopNavigation from '@/components/TopNavigation';
+import { getAssetPath } from '@/lib/getAssetPath';
 
 interface PageProps {
   params: { locale: string };
@@ -18,7 +19,7 @@ export async function generateMetadata({ params: { locale } }: PageProps): Promi
     openGraph: {
       title: t('title'),
       description: t('description'),
-      images: ['/images/activities/pexels-luis-contf-2970945-5868550.jpg'],
+      images: [getAssetPath('/images/activities/pexels-luis-contf-2970945-5868550.jpg')],
     },
   };
 }
@@ -50,7 +51,7 @@ export default function TravelPage({ params: { locale } }: PageProps): JSX.Eleme
         <div className="container mx-auto grid items-center gap-8 px-4 lg:grid-cols-2">
           <div className="overflow-hidden rounded-[28px] shadow-xl ring-1 ring-sand-100">
             <Image
-              src="/images/activities/pexels-luis-contf-2970945-5868550.jpg"
+              src={getAssetPath('/images/activities/pexels-luis-contf-2970945-5868550.jpg')}
               alt={t('mainImageAlt')}
               width={1200}
               height={1600}

@@ -3,6 +3,7 @@ import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import TopNavigation from '@/components/TopNavigation';
+import { getAssetPath } from '@/lib/getAssetPath';
 
 interface PageProps {
   params: { locale: string };
@@ -57,7 +58,7 @@ export default function ContactPage({ params: { locale } }: PageProps): JSX.Elem
             <article className="rounded-3xl bg-white p-6 md:p-8 shadow-sm ring-1 ring-sand-100 text-center">
               <div className="mx-auto h-56 w-56 overflow-hidden rounded-2xl border border-ocean-100 bg-white shadow-sm">
                 <Image
-                  src="/images/qrcode/wenjuanxing-qrcode.jpg"
+                  src={getAssetPath('/images/qrcode/wenjuanxing-qrcode.jpg')}
                   alt={t('survey.title')}
                   width={224}
                   height={224}

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import TopNavigation from '@/components/TopNavigation';
+import { getAssetPath } from '@/lib/getAssetPath';
 
 interface PageProps {
   params: { locale: string };
@@ -18,7 +19,7 @@ export async function generateMetadata({ params: { locale } }: PageProps): Promi
     openGraph: {
       title: t('title'),
       description: t('description'),
-      images: ['/images/pexels/weddings/beach-wedding-arch.jpg'],
+      images: [getAssetPath('/images/pexels/weddings/beach-wedding-arch.jpg')],
     },
   };
 }
@@ -75,7 +76,7 @@ export default function WeddingsPage({ params: { locale } }: PageProps): JSX.Ele
 
           <div className="overflow-hidden rounded-[28px] bg-white shadow-xl ring-1 ring-sand-100">
             <Image
-              src="/images/pexels/weddings/beach-wedding-arch.jpg"
+              src={getAssetPath('/images/pexels/weddings/beach-wedding-arch.jpg')}
               alt={t('mainImageAlt')}
               width={1200}
               height={900}
@@ -103,7 +104,7 @@ export default function WeddingsPage({ params: { locale } }: PageProps): JSX.Ele
             </div>
             <div className="overflow-hidden rounded-2xl">
               <Image
-                src="/images/pexels/weddings/beach-bride.jpg"
+                src={getAssetPath('/images/pexels/weddings/beach-bride.jpg')}
                 alt={t('highlights.photo.title')}
                 width={900}
                 height={700}
