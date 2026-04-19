@@ -27,18 +27,48 @@ export default function GalleryPage({ params: { locale } }: PageProps) {
   const images = [
     {
       src: '/images/venues/baegjins-saipan-2379093_1920.jpg',
-      alt: t('venue1Alt'),
-      desc: t('venue1Desc'),
+      alt: t('items.blueGrotto.alt'),
+      desc: t('items.blueGrotto.desc'),
     },
     {
       src: '/images/venues/ccpapa-cannon-175419_1920.jpg',
-      alt: t('venue2Alt'),
-      desc: t('venue2Desc'),
+      alt: t('items.cannonCoast.alt'),
+      desc: t('items.cannonCoast.desc'),
     },
     {
       src: '/images/activities/horrors-saipan-2376481_1920.jpg',
-      alt: t('activity1Alt'),
-      desc: t('activity1Desc'),
+      alt: t('items.beachDay.alt'),
+      desc: t('items.beachDay.desc'),
+    },
+    {
+      src: '/images/pexels/weddings/beach-wedding-arch.jpg',
+      alt: t('items.weddingArch.alt'),
+      desc: t('items.weddingArch.desc'),
+    },
+    {
+      src: '/images/pexels/weddings/tropical-wedding-setup.jpg',
+      alt: t('items.tropicalSetup.alt'),
+      desc: t('items.tropicalSetup.desc'),
+    },
+    {
+      src: '/images/pexels/weddings/beach-wedding-sunset.jpg',
+      alt: t('items.sunsetVows.alt'),
+      desc: t('items.sunsetVows.desc'),
+    },
+    {
+      src: '/images/pexels/weddings/beach-bride.jpg',
+      alt: t('items.bridePortrait.alt'),
+      desc: t('items.bridePortrait.desc'),
+    },
+    {
+      src: '/images/pexels/scenery/tropical-sailboat-couple.jpg',
+      alt: t('items.sailboatRomance.alt'),
+      desc: t('items.sailboatRomance.desc'),
+    },
+    {
+      src: '/images/pexels/scenery/tropical-beach-ceremony-view.jpg',
+      alt: t('items.ceremonyView.alt'),
+      desc: t('items.ceremonyView.desc'),
     },
   ];
   return (

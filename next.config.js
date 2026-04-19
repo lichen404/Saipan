@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const createNextIntlPlugin = require('next-intl/plugin');
 
-const withNextIntl = createNextIntlPlugin();
+const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
 const repository = process.env.GITHUB_REPOSITORY || '';
 const repositoryName = repository.split('/')[1] || '';

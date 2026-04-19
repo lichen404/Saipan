@@ -14,7 +14,29 @@
     "hero": {
       "title": "Dream Weddings in Saipan",
       "subtitle": "Say 'I do' in paradise with breathtaking ocean views",
-      "cta": "Explore Wedding Packages"
+      "cta": "Explore Wedding Packages",
+      "kicker": "Destination Wedding · Honeymoon · Travel",
+      "secondaryCta": "View Photo Inspiration",
+      "facts": {
+        "visa": {
+          "value": "Visa Free",
+          "label": "A smoother trip for your guests"
+        },
+        "chapel": {
+          "value": "Ocean Chapels",
+          "label": "Ceremony and scenery in one"
+        },
+        "honeymoon": {
+          "value": "Instant Honeymoon",
+          "label": "Celebrate and unwind at once"
+        }
+      }
+    },
+    "featured": {
+      "eyebrow": "Featured Experiences",
+      "title": "Wedding and travel inspiration in one place",
+      "subtitle": "From the ceremony and photography to the honeymoon itinerary, every key moment can be planned beautifully.",
+      "link": "Learn more"
     },
     "story": {
       "title": "Why Choose Saipan",
@@ -33,6 +55,12 @@
         "description": "One of the greatest joys of marrying in Saipan is that the honeymoon begins the very moment the ceremony ends.\n\nFrom the electric blue of the Grotto to the powder-soft sands of Managaha Island and sunset drives around the coast, every corner of the island invites you and your guests into a true holiday state of mind."
       },
       "closing": "To the one I love:\nWe are not only holding a wedding.\nWe are carving our most precious memories\ninto one of the brightest pearls of the Pacific."
+    },
+    "cta": {
+      "title": "Turn your wedding into the journey of a lifetime",
+      "description": "Tell us your dream setting and we will help shape the venue, photos, and island holiday around it.",
+      "primary": "Plan My Wedding",
+      "secondary": "Explore Travel Ideas"
     }
   },
   "weddings": {
@@ -40,18 +68,66 @@
       "title": "Saipan Wedding Services",
       "description": "Celebrate your dream wedding on Saipan's beautiful beaches."
     },
+    "eyebrow": "Wedding Service",
     "title": "Weddings",
-    "mainImageAlt": "Bride and groom embracing on Saipan beach",
-    "mainImageDesc": "White sands and turquoise waters make your wedding unforgettable."
+    "subtitle": "Oceanfront ceremony, light photography and honeymoon mood in one plan",
+    "mainImageAlt": "Beach wedding setup in Saipan style",
+    "mainImageDesc": "From a sea-facing arch to the moment of your vows, Saipan offers a soft, bright and romantic setting for an unforgettable destination wedding.",
+    "highlights": {
+      "chapel": {
+        "title": "Ocean-view ceremony spaces",
+        "description": "Whether you prefer a chapel mood or a beach vow exchange, the island offers settings that blend beautifully with the shoreline."
+      },
+      "photo": {
+        "title": "Effortless photo routes",
+        "description": "White sand, reef textures and sunset light make it easy to create wedding photos with depth and softness."
+      },
+      "hosting": {
+        "title": "A trip your guests will enjoy",
+        "description": "After the ceremony, everyone can ease into vacation mode and share a relaxed island memory together."
+      }
+    },
+    "note": {
+      "title": "Make planning feel lighter",
+      "description": "Share your preferred style, guest count and budget range, and we can help shape venue, photo and island-day ideas that suit you better."
+    },
+    "cta": {
+      "primary": "Check Availability",
+      "secondary": "View Gallery"
+    }
   },
   "travel": {
     "meta": {
       "title": "Saipan Travel Packages",
       "description": "Discover exciting activities and custom travel experiences in Saipan."
     },
+    "eyebrow": "Travel Ideas",
     "title": "Travel Packages",
-    "mainImageAlt": "Tourist enjoying vacation by the sea in Saipan",
-    "mainImageDesc": "Enjoy water sports and stunning nature for a memorable trip."
+    "subtitle": "The island mood begins the moment the coastline appears beneath your window",
+    "mainImageAlt": "Aerial view of Saipan-style coastline from an airplane window",
+    "mainImageDesc": "As the wing glides over turquoise water and white surf, the island slowly opens below. Beyond the wedding itself, Saipan is perfect for turning arrival, rest and honeymoon energy into one flowing tropical journey.",
+    "items": {
+      "blue": {
+        "title": "Blue Grotto and snorkeling",
+        "description": "Clear water and luminous blue tones make this a refreshing pre-wedding or post-wedding activity."
+      },
+      "island": {
+        "title": "Managaha-style white sand time",
+        "description": "Bright water, soft sand and island activities help the trip feel playful and deeply relaxing."
+      },
+      "sunset": {
+        "title": "Coastal drives and sunset views",
+        "description": "Save the evening for an ocean road and golden light, perfect for couples and accompanying family alike."
+      }
+    },
+    "note": {
+      "title": "Wedding and travel can flow together naturally",
+      "description": "If you want to combine your ceremony, photo session and honeymoon into one smooth trip, Saipan offers a very comfortable pace for it."
+    },
+    "cta": {
+      "primary": "Plan My Trip",
+      "secondary": "Browse Gallery"
+    }
   },
   "gallery": {
     "meta": {
@@ -64,7 +140,65 @@
     "venue2Alt": "Saipan historic cannon site",
     "venue2Desc": "A unique blend of history and ocean views on Saipan.",
     "activity1Alt": "Saipan beach leisure activities",
-    "activity1Desc": "Sunshine, sand, and sea-enjoy your relaxing holiday."
+    "activity1Desc": "Sunshine, sand, and sea-enjoy your relaxing holiday.",
+    "items": {
+      "blueGrotto": {
+        "alt": "Blue Grotto coastline in Saipan",
+        "desc": "The entrance to the Blue Grotto shows off one of Saipan's most iconic shades of ocean blue."
+      },
+      "cannonCoast": {
+        "alt": "Historic coastal cannon site in Saipan",
+        "desc": "A dramatic seaside lookout where island history meets open Pacific views."
+      },
+      "beachDay": {
+        "alt": "Relaxed beach day scene in Saipan",
+        "desc": "Soft sand and bright water capture the easy rhythm of a tropical island holiday."
+      },
+      "weddingArch": {
+        "alt": "Beach wedding arch facing the sea",
+        "desc": "A simple oceanfront arch creates an intimate and elegant destination ceremony setting."
+      },
+      "tropicalSetup": {
+        "alt": "Tropical beach wedding setup with floral decor",
+        "desc": "Fresh florals, open sand and sea breeze come together in a naturally refined celebration space."
+      },
+      "sunsetVows": {
+        "alt": "Romantic beach wedding at sunset",
+        "desc": "Golden evening light makes the vow exchange feel cinematic and deeply memorable."
+      },
+      "bridePortrait": {
+        "alt": "Bride portrait on a tropical beach",
+        "desc": "Ocean light and wind give destination wedding portraits a soft and graceful mood."
+      },
+      "sailboatRomance": {
+        "alt": "Couple beside a sailboat on the beach",
+        "desc": "This scene blends honeymoon freedom, sea breeze and quiet island romance."
+      },
+      "ceremonyView": {
+        "alt": "Palm-lined view of a tropical beach ceremony",
+        "desc": "Palm trees, blue sky and a wide horizon bring out the relaxed beauty of an island wedding."
+      }
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact Us | Saipan Wedding Travel",
+      "description": "Scan the QR codes to reach us on WeChat or complete the survey form."
+    },
+    "eyebrow": "Contact & Survey",
+    "title": "Contact Us",
+    "description": "If you are planning a Saipan wedding or would like more travel inspiration, feel free to connect with us using the QR codes below.\nWe also invite you to complete a short survey so we can better understand your needs.",
+    "wechat": {
+      "title": "WeChat Consultation",
+      "description": "Scan the code to connect with us for one-on-one wedding and travel advice.",
+      "placeholder": "WeChat QR Code\nPlaceholder"
+    },
+    "survey": {
+      "title": "Questionnaire Survey",
+      "description": "Please scan to fill out the survey and tell us your ideal wedding style, budget range, and travel preferences.",
+      "placeholder": "Survey QR Code\nPlaceholder"
+    },
+    "notice": "Every response helps us prepare a Saipan wedding and travel plan that matches your expectations more closely."
   },
   "footer": {
     "copyright": "© 2026 Saipan Wedding Travel. All rights reserved.",

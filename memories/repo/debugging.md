@@ -1,0 +1,2 @@
+- next-intl: use [i18n/request.ts](i18n/request.ts) with the plugin path in [next.config.js](next.config.js) to avoid the deprecated root request config warning.
+- If Next dev throws a missing vendor-chunk module error on Windows, clear [.next](.next) and restart from the consistent workspace path casing.
