@@ -131,7 +131,7 @@ export default function HomePage({ params: { locale } }: HomePageProps): JSX.Ele
           <div className="grid grid-cols-2 gap-3 md:gap-4">
             <div className="col-span-2 overflow-hidden rounded-[28px] border border-white/15 shadow-2xl">
               <Image
-                src={getAssetPath('/images/pexels/weddings/beach-wedding-sunset.jpg')}
+                src={getAssetPath('/images/pexels/weddings/beach-wedding-sunset.webp')}
                 alt={t('gallery.items.sunsetVows.alt')}
                 width={1200}
                 height={800}
@@ -140,7 +140,7 @@ export default function HomePage({ params: { locale } }: HomePageProps): JSX.Ele
             </div>
             <div className="overflow-hidden rounded-[24px] border border-white/15 shadow-xl">
               <Image
-                src={getAssetPath('/images/pexels/weddings/beach-bride.jpg')}
+                src={getAssetPath('/images/pexels/weddings/beach-bride.webp')}
                 alt={t('gallery.items.bridePortrait.alt')}
                 width={800}
                 height={533}
@@ -149,7 +149,7 @@ export default function HomePage({ params: { locale } }: HomePageProps): JSX.Ele
             </div>
             <div className="overflow-hidden rounded-[24px] border border-white/15 shadow-xl">
               <Image
-                src={getAssetPath('/images/pexels/scenery/tropical-sailboat-couple.jpg')}
+                src={getAssetPath('/images/pexels/scenery/tropical-sailboat-couple.webp')}
                 alt={t('gallery.items.sailboatRomance.alt')}
                 width={800}
                 height={533}

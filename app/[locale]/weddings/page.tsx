@@ -19,7 +19,7 @@ export async function generateMetadata({ params: { locale } }: PageProps): Promi
     openGraph: {
       title: t('title'),
       description: t('description'),
-      images: [getAssetPath('/images/pexels/weddings/beach-wedding-arch.jpg')],
+      images: [getAssetPath('/images/pexels/weddings/beach-wedding-arch.webp')],
     },
   };
 }
@@ -76,7 +76,7 @@ export default function WeddingsPage({ params: { locale } }: PageProps): JSX.Ele
 
           <div className="overflow-hidden rounded-[28px] bg-white shadow-xl ring-1 ring-sand-100">
             <Image
-              src={getAssetPath('/images/pexels/weddings/beach-wedding-arch.jpg')}
+              src={getAssetPath('/images/pexels/weddings/beach-wedding-arch.webp')}
               alt={t('mainImageAlt')}
               width={1200}
               height={900}
@@ -104,7 +104,7 @@ export default function WeddingsPage({ params: { locale } }: PageProps): JSX.Ele
             </div>
             <div className="overflow-hidden rounded-2xl">
               <Image
-                src={getAssetPath('/images/pexels/weddings/beach-bride.jpg')}
+                src={getAssetPath('/images/pexels/weddings/beach-bride.webp')}
                 alt={t('highlights.photo.title')}
                 width={900}
                 height={700}

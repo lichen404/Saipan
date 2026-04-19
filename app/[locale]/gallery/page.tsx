@@ -42,32 +42,32 @@ export default function GalleryPage({ params: { locale } }: PageProps) {
       desc: t('items.beachDay.desc'),
     },
     {
-      src: getAssetPath('/images/pexels/weddings/beach-wedding-arch.jpg'),
+      src: getAssetPath('/images/pexels/weddings/beach-wedding-arch.webp'),
       alt: t('items.weddingArch.alt'),
       desc: t('items.weddingArch.desc'),
     },
     {
-      src: getAssetPath('/images/pexels/weddings/tropical-wedding-setup.jpg'),
+      src: getAssetPath('/images/pexels/weddings/tropical-wedding-setup.webp'),
       alt: t('items.tropicalSetup.alt'),
       desc: t('items.tropicalSetup.desc'),
     },
     {
-      src: getAssetPath('/images/pexels/weddings/beach-wedding-sunset.jpg'),
+      src: getAssetPath('/images/pexels/weddings/beach-wedding-sunset.webp'),
       alt: t('items.sunsetVows.alt'),
       desc: t('items.sunsetVows.desc'),
     },
     {
-      src: getAssetPath('/images/pexels/weddings/beach-bride.jpg'),
+      src: getAssetPath('/images/pexels/weddings/beach-bride.webp'),
       alt: t('items.bridePortrait.alt'),
       desc: t('items.bridePortrait.desc'),
     },
     {
-      src: getAssetPath('/images/pexels/scenery/tropical-sailboat-couple.jpg'),
+      src: getAssetPath('/images/pexels/scenery/tropical-sailboat-couple.webp'),
       alt: t('items.sailboatRomance.alt'),
       desc: t('items.sailboatRomance.desc'),
     },
     {
-      src: getAssetPath('/images/pexels/scenery/tropical-beach-ceremony-view.jpg'),
+      src: getAssetPath('/images/pexels/scenery/tropical-beach-ceremony-view.webp'),
       alt: t('items.ceremonyView.alt'),
       desc: t('items.ceremonyView.desc'),
     },
