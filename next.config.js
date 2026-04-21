@@ -1,5 +1,23 @@
 /** @type {import('next').NextConfig} */
+const fs = require('fs');
 const createNextIntlPlugin = require('next-intl/plugin');
+
+// Normalize module path casing via realpathSync.native so webpack
+// doesn't create duplicate instances from mixed-case Windows paths.
+class NormalizePathCasingPlugin {
+  apply(resolver) {
+    resolver.hooks.result.tap('NormalizePathCasingPlugin', (result) => {
+      if (result && result.path) {
+        try {
+          result.path = fs.realpathSync.native(result.path);
+        } catch (_) {
+          // Ignore – path may not exist yet
+        }
+      }
+      return result;
+    });
+  }
+}
 
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
@@ -22,6 +40,13 @@ const nextConfig = {
   basePath,
   assetPrefix: basePath || undefined,
   trailingSlash: true,
+  webpack: (config) => {
+    config.resolve.plugins = [
+      ...(config.resolve.plugins || []),
+      new NormalizePathCasingPlugin(),
+    ];
+    return config;
+  },
 };
 
 module.exports = withNextIntl(nextConfig);
