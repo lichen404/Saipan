@@ -17,7 +17,7 @@ export async function generateMetadata({ params: { locale } }: PageProps): Promi
     openGraph: {
       title: t('title'),
       description: t('description'),
-      images: [getAssetPath('/images/venues/baegjins-saipan-2379093_1920.jpg')],
+      images: [getAssetPath('/images/venues/baegjins-saipan-2379093_1920.webp')],
     },
   };
 }
@@ -27,17 +27,17 @@ export default function GalleryPage({ params: { locale } }: PageProps) {
   const t = useTranslations('gallery');
   const images = [
     {
-      src: getAssetPath('/images/venues/baegjins-saipan-2379093_1920.jpg'),
+      src: getAssetPath('/images/venues/baegjins-saipan-2379093_1920.webp'),
       alt: t('items.blueGrotto.alt'),
       desc: t('items.blueGrotto.desc'),
     },
     {
-      src: getAssetPath('/images/venues/ccpapa-cannon-175419_1920.jpg'),
+      src: getAssetPath('/images/venues/ccpapa-cannon-175419_1920.webp'),
       alt: t('items.cannonCoast.alt'),
       desc: t('items.cannonCoast.desc'),
     },
     {
-      src: getAssetPath('/images/activities/horrors-saipan-2376481_1920.jpg'),
+      src: getAssetPath('/images/activities/horrors-saipan-2376481_1920.webp'),
       alt: t('items.beachDay.alt'),
       desc: t('items.beachDay.desc'),
     },

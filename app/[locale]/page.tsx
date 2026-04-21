@@ -50,21 +50,21 @@ export default function HomePage({ params: { locale } }: HomePageProps): JSX.Ele
   const featuredCards = [
     {
       href: `/${locale}/weddings`,
-      imageSrc: getAssetPath('/images/weddings/ioa8320-bride-and-groom-483223_1920.jpg'),
+      imageSrc: getAssetPath('/images/weddings/ioa8320-bride-and-groom-483223_1920.webp'),
       imageAlt: t('weddings.mainImageAlt'),
       title: t('weddings.title'),
       description: t('weddings.mainImageDesc'),
     },
     {
       href: `/${locale}/travel`,
-      imageSrc: getAssetPath('/images/activities/atman-travel-1106306_1920.jpg'),
+      imageSrc: getAssetPath('/images/activities/atman-travel-1106306_1920.webp'),
       imageAlt: t('travel.mainImageAlt'),
       title: t('travel.title'),
       description: t('travel.mainImageDesc'),
     },
     {
       href: `/${locale}/gallery`,
-      imageSrc: getAssetPath('/images/venues/baegjins-saipan-2379093_1920.jpg'),
+      imageSrc: getAssetPath('/images/venues/baegjins-saipan-2379093_1920.webp'),
       imageAlt: t('gallery.venue1Alt'),
       title: t('gallery.title'),
       description: t('gallery.venue1Desc'),
