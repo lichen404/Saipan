@@ -16,6 +16,7 @@ export async function generateMetadata({
   // Import messages directly to avoid headers() usage (required for static export)
   const messages = (await import(`../../messages/${locale}.json`)).default;
   const t = (key: string) => messages?.metadata?.[key] ?? key;
+  const shareImage = getAssetPath('/images/social/og-default.webp');
 
   return {
     title: t('title'),
@@ -24,6 +25,13 @@ export async function generateMetadata({
       title: t('title'),
       description: t('description'),
       type: 'website',
+      images: [shareImage],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('title'),
+      description: t('description'),
+      images: [shareImage],
     },
   };
 }

@@ -12,6 +12,7 @@ interface PageProps {
 export async function generateMetadata({ params: { locale } }: PageProps): Promise<Metadata> {
   const messages = (await import(`../../../messages/${locale}.json`)).default;
   const t = (key: string) => messages?.contact?.meta?.[key] ?? key;
+  const shareImage = getAssetPath('/images/social/og-default.webp');
 
   return {
     title: t('title'),
@@ -20,6 +21,13 @@ export async function generateMetadata({ params: { locale } }: PageProps): Promi
       title: t('title'),
       description: t('description'),
       type: 'website',
+      images: [shareImage],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('title'),
+      description: t('description'),
+      images: [shareImage],
     },
   };
 }
@@ -58,7 +66,7 @@ export default function ContactPage({ params: { locale } }: PageProps): JSX.Elem
             <article className="rounded-3xl bg-white p-6 md:p-8 shadow-sm ring-1 ring-sand-100 text-center">
               <div className="mx-auto h-56 w-56 overflow-hidden rounded-2xl border border-ocean-100 bg-white shadow-sm">
                 <Image
-                  src={getAssetPath('/images/qrcode/wenjuanxing-qrcode.jpg')}
+                  src={getAssetPath('/images/qrcode/wenjuanwang-qrcode.jpg')}
                   alt={t('survey.title')}
                   width={224}
                   height={224}

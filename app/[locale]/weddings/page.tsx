@@ -13,13 +13,22 @@ interface PageProps {
 export async function generateMetadata({ params: { locale } }: PageProps): Promise<Metadata> {
   const messages = (await import(`../../../messages/${locale}.json`)).default;
   const t = (key: string) => messages?.weddings?.meta?.[key] ?? key;
+  const shareImage = getAssetPath('/images/pexels/weddings/beach-wedding-arch.webp');
+
   return {
     title: t('title'),
     description: t('description'),
     openGraph: {
       title: t('title'),
       description: t('description'),
-      images: [getAssetPath('/images/pexels/weddings/beach-wedding-arch.webp')],
+      type: 'website',
+      images: [shareImage],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('title'),
+      description: t('description'),
+      images: [shareImage],
     },
   };
 }
